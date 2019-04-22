@@ -1,7 +1,12 @@
+{% load static %}
 <html>
 
 <head>
-    <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link href="{% static 'accounts/templatemo_style.css' %}" rel="stylesheet" type="text/css" />
+
+    <script src="{% static 'accounts/jslink.js' %}">
+    </script>
+
 </head>
 
 <body>
@@ -26,11 +31,13 @@
         <p><b><i>Category:Action & Adventure</b></i>
         </p>
 
-        <a href="1.html" style="float:right;"><u>Back home</u></a>
-        <a href="cart.html" style="float:right;"><u>Cart</u></a>
+        <!--<a href="1.html" style="float:right;"><u>Back home</u></a>-->
+        <a href="{% url 'cart' %}" style="float:right;"><u>Cart</u></a>
     </div>
 
-
+    <!--- <div>
+        <button>addddddd</button>
+    </div>-->
 
     <div id="templatemo_content_right">
         <div class="cleaner_with_width">&nbsp;</div>
@@ -41,7 +48,7 @@
 
         <div class="templatemo_product_box">
             <h1 class="hh1">The Maze Runner</h1>
-            <img id="z" src="a1.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a1.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By James Dashner <br>language:English</p>
                 <h3>Price:Rs 395</h3>
@@ -54,7 +61,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">The Immortals of the Meluha</h1>
-            <img id="z" src="a2.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a2.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Amish Tripathi<br>language:English</p>
                 <h3>Price:Rs 2076</h3>
@@ -67,7 +74,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">Divergent</h1>
-            <img id="z" src="a3.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a3.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Veronica Roth<br>language: English</p>
                 <h3>Price:Rs 399</h3>
@@ -82,7 +89,7 @@
 
         <div class="templatemo_product_box">
             <h1 class="hh1">Life of Pi</h1>
-            <img id="z" src="a4.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a4.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Yann Martel<br>language: English</p>
                 <h3>Price:Rs 335 </h3>
@@ -95,7 +102,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">Harry Potter</h1>
-            <img id="z" src="a5.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a5.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By J.K Rowling<br>language: English</p>
                 <h3>Price:Rs 699 </h3>
@@ -108,7 +115,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">The Secrets of the Nagas</h1>
-            <img id="z" src="a6.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a6.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Amish Tripathi<br>language: English</p>
                 <h3>Price:Rs 193 </h3>
@@ -123,7 +130,7 @@
 
         <div class="templatemo_product_box">
             <h1 class="hh1">The Hunger Games</h1>
-            <img id="z" src="a7.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a7.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Suzanne Collins<br>language: English</p>
                 <h3>Price:Rs 857 </h3>
@@ -136,7 +143,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">A Game of Thrones</h1>
-            <img id="z" src="a8.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a8.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>George R.R Martin<br>language: English</p>
                 <h3>Price:Rs 414 </h3>
@@ -149,7 +156,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">Avenger</h1>
-            <img id="z" src="a9.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a9.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Frederick forsyth<br>language: English</p>
                 <h3>Price:Rs 237 </h3>
@@ -164,7 +171,7 @@
 
         <div class="templatemo_product_box">
             <h1 class="hh1">Himalayan Blunder </h1>
-            <img id="z" src="a10.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a10.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By J.P Dalvi<br>language: English</p>
                 <h3>Price:Rs 446 </h3>
@@ -177,7 +184,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">Jurassic Park</h1>
-            <img id="z" src="a11.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a11.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Micheal Crichton<br>language: English</p>
                 <h3>Price:Rs 398 </h3>
@@ -190,7 +197,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">Looking for Alaska</h1>
-            <img id="z" src="a12.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a12.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By John Green<br>language: English</p>
                 <h3>Price:Rs 350 </h3>
@@ -203,7 +210,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">The Great Escape</h1>
-            <img id="z" src="a13.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a13.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Paul Brickhill<br>language: English</p>
                 <h3>Price:Rs 586 </h3>
@@ -216,7 +223,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">Dark of the Sun</h1>
-            <img id="z" src="a14.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a14.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Wilbur Smith <br>language: English</p>
                 <h3>Price:Rs 284 </h3>
@@ -229,7 +236,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">A Journey to Center of the Earth</h1>
-            <img id="z" src="a15.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a15.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Jules Verne<br>language: English</p>
                 <h3>Price:Rs 125 </h3>
@@ -242,7 +249,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">Avarana</h1>
-            <img id="z" src="a16.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a16.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By S.L Bhyrappa<br>language: Kannada</p>
                 <h3>Price:Rs 338 </h3>
@@ -255,7 +262,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">The Jungle</h1>
-            <img id="z" src="a17.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a17.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Clive Cussler & Jack Du Brul<br>language: English</p>
                 <h3>Price:Rs 330 </h3>
@@ -268,7 +275,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">Temple</h1>
-            <img id="z" src="a18.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a18.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Matthew Reilly <br>language: English</p>
                 <h3>Price:Rs 360 </h3>
@@ -281,7 +288,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">The Room on the roof</h1>
-            <img id="z" src="a19.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a19.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Ruskin Bond<br>language: English</p>
                 <h3>Price:Rs 224 </h3>
@@ -293,7 +300,7 @@
         <div class="cleaner_with_width">&nbsp;</div>
         <div class="templatemo_product_box">
             <h1 class="hh1">The Jungle Book</h1>
-            <img id="z" src="a20.jpg" alt="image" />
+            <img id="z" src="{% static 'accounts/a20.jpg' %}" alt="image" />
             <div class="product_info">
                 <p>By Rudyard Kipling<br>language: English</p>
                 <h3>Price:Rs 998 </h3>
@@ -304,7 +311,7 @@
         </div>
 
     </div>
-    <script src="jslink.js">
+    <script src="{% static 'jslink.js' %}">
     </script>
 </body>
 
